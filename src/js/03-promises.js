@@ -1,5 +1,6 @@
 import Notiflix from 'notiflix';
-formEl=document.querySelector('.form')
+formEl = document.querySelector('.form')
+
 
 formEl.addEventListener('submit', (evt) => {
   evt.preventDefault();
