@@ -24,11 +24,14 @@ const options = {
     defaultDate:new Date(),
     minuteIncrement: 1,
     mode: 'single',
+    onOpen:function(){ buttonEl.disabled = true;},
     onChange: function (selectedDates) {
+       
         dateInterval = Date.parse(selectedDates) - options.defaultDate
         startBlocked(dateInterval)
         },
     onClose(selectedDates) {
+       
         buttonEl.addEventListener('click',timeRemaining)
     }    
 };

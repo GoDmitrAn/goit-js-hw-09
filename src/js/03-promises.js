@@ -4,13 +4,21 @@ formEl=document.querySelector('.form')
 
 formEl.addEventListener('submit', (evt) => {
   evt.preventDefault();
-  const formData=new FormData(formEl)
-  // createPromise(formData.get('amount'),formData.get('delay'))
-  promise(formData.get('amount'), formData.get('delay')).then(value => {
-    Notiflix.Notify.success(value);
-  }).catch(error => {
-    Notiflix.Notify.failure(error);
-  })
+  const formData = new FormData(formEl);
+  let delay = Number(formData.get('delay'));
+  const step = Number(formData.get('step'));
+  
+  for (let i = 1; i <= formData.get('amount'); i += 1){
+      promise(i, delay).then(value => {
+          Notiflix.Notify.success(value);
+        }).catch(error => {
+          Notiflix.Notify.failure(error);
+        })
+           delay += step;
+          console.log("🚀 ~ line 19  delay", delay)
+      }
+ 
+
 })
 const promise = function createPromise(position, delay){
   return new Promise((resolve, reject)=>{
