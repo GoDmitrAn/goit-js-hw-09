@@ -1,4 +1,5 @@
-startBtnEL = document.querySelector("[data-start]")
+
+startBtnEL = document.querySelector('button[data-start]')
 stopBtnEL = document.querySelector('[data-stop]')
 bodyEl = document.querySelector('body')
 paragrapfEl=document.querySelector('p')
