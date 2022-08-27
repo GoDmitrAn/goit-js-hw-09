@@ -1,5 +1,4 @@
 import Notiflix from 'notiflix';
-submitBtn = document.querySelector('[submit]')
 formEl=document.querySelector('.form')
 
 formEl.addEventListener('submit', (evt) => {
@@ -15,7 +14,7 @@ formEl.addEventListener('submit', (evt) => {
           Notiflix.Notify.failure(error);
         })
            delay += step;
-          console.log("🚀 ~ line 19  delay", delay)
+          
       }
  
 
