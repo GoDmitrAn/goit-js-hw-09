@@ -1,8 +1,8 @@
 
-startBtnEL = document.querySelector('[data-start]')
-stopBtnEL = document.querySelector('[data-stop]')
-bodyEl = document.querySelector('body')
-paragrapfEl=document.querySelector('p')
+const startBtnEL = document.querySelector('[data-start]')
+const stopBtnEL = document.querySelector('[data-stop]')
+const bodyEl = document.querySelector('body')
+const paragrapfEl=document.querySelector('p')
 
 
 startBtnEL.style.padding = '1em'
