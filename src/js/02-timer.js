@@ -5,12 +5,12 @@ import "flatpickr/dist/flatpickr.min.css";
 require("flatpickr/dist/themes/dark.css")
 import Notiflix from 'notiflix';
 
-buttonEl = document.querySelector('[data-start]');
-inputEl = document.querySelector('#datetime-picker')
-spanElDays = document.querySelector('[data-days]')
-spanElHours = document.querySelector('[data-hours]')
-spanElMinutes = document.querySelector('[data-minutes]')
-spanElSeconds = document.querySelector('[data-seconds]')
+const buttonEl = document.querySelector('[data-start]');
+const inputEl = document.querySelector('#datetime-picker')
+const spanElDays = document.querySelector('[data-days]')
+const spanElHours = document.querySelector('[data-hours]')
+const spanElMinutes = document.querySelector('[data-minutes]')
+const spanElSeconds = document.querySelector('[data-seconds]')
 
 
 
