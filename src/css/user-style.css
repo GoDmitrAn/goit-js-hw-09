@@ -85,6 +85,10 @@ button {
 button:disabled {
   background: #7676808c;
 }
+button:hover,
+.form-control.input:hover {
+  cursor: pointer;
+}
 .form-control.input:disabled {
   background: #7676808c;
 }
