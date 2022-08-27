@@ -1,4 +1,6 @@
 import flatpickr from "flatpickr";
+const Ukrainian = require("flatpickr/dist/l10n/uk.js").default.uk;
+flatpickr.localize(Ukrainian);
 import "flatpickr/dist/flatpickr.min.css";
 require("flatpickr/dist/themes/dark.css")
 import Notiflix from 'notiflix';
